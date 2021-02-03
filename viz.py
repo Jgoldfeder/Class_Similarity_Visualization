@@ -198,10 +198,9 @@ for model_name in args.model:
     plt.plot(thresholds, num_unknowns, 'bo')
     plt.plot(thresholds, num_inaccurates, 'ro')   
     plt.legend(bbox_to_anchor=(1.04,1), loc="upper left")
-    plt.tight_layout()
-    plt.show()
-    
+    plt.tight_layout()    
     plt.savefig(model_name + "-" +args.new_class + '.png')
+    plt.show()
     
     
     
